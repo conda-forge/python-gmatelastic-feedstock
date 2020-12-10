@@ -1,6 +1,6 @@
 {% set name = "python-gmatelastic" %}
-{% set version = "0.1.0" %}
-{% set sha256 = "962aad87e9738a8734c99d7f57ef952767710e679445e06dd85af44553ab07d6" %}
+{% set version = "0.2.0" %}
+{% set sha256 = "f3f3dae9e24392da489e0ac10f59a002507a06a3a5bacdd493c887a8f30a3fcb" %}
 
 package:
   name: {{ name|lower }}
@@ -11,9 +11,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
-  skip: True  # [win]
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  skip: true  # [win]
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -35,8 +35,8 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Linear elastic material model (Python wrapper).'
-  description: 'Linear elastic material model (Python wrapper).'
+  summary: Linear elastic material model (Python wrapper).
+  description: Linear elastic material model (Python wrapper).
   doc_url: https://github.com/tdegeus/GMatElastic
   dev_url: https://github.com/tdegeus/GMatElastic
 
