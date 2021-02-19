@@ -1,6 +1,6 @@
 {% set name = "python-gmatelastic" %}
-{% set version = "0.2.0" %}
-{% set sha256 = "f3f3dae9e24392da489e0ac10f59a002507a06a3a5bacdd493c887a8f30a3fcb" %}
+{% set version = "0.2.1" %}
+{% set sha256 = "a42bfde8e781304bd0f1bfc1fd41e9b4a05326ec18ab2fa9d4c2f9b026c9dca7" %}
 
 package:
   name: {{ name|lower }}
